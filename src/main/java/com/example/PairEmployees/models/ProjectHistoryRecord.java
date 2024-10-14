@@ -12,7 +12,7 @@ public class ProjectHistoryRecord {
     private LocalDate endDate;
 
     public ProjectHistoryRecord(String line) {
-        String[] arguments = line.split(",");
+        String[] arguments = line.split(", ");
         if(arguments.length != 4 ) {
             throw new IllegalArgumentException("Number of arguments is incorrect");
         }
